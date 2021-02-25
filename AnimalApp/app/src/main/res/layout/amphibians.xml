@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btnFrog"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/frog_s"
+                android:text="Frog"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnToad"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/toad_s"
+                android:text="Toad"
+                android:textAlignment="viewStart"
+                android:textColor="#212121"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/btnFrog"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/btnSalamander"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/salamander_s"
+                android:text="Salamander"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/btnAxoatl"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <Button
+                android:id="@+id/btnNewt"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/newt_s"
+                android:text="Newt"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/btnToad"
+                tools:layout_editor_absoluteX="27dp" />
+
+            <Button
+                android:id="@+id/btnAxoatl"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/axoatl_s"
+                android:text="Axoatl"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/btnNewt"
+                tools:layout_editor_absoluteX="51dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnTurtle"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/turtle_s"
+                android:text="Turtle"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnIguana"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/iguana_s"
+                android:text="Iguana"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/btnTurtle" />
+
+            <Button
+                android:id="@+id/btnMonitorLizard"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/monitor_lizard_s"
+                android:text="Monitor Lizard"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/btnIguana" />
+
+            <Button
+                android:id="@+id/btnChameleon"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/chameleon_s"
+                android:text="Chameleon"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/btnMonitorLizard" />
+
+            <Button
+                android:id="@+id/btnGecko"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/gecko_s"
+                android:text="Gecko"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnChameleon"
+                tools:layout_editor_absoluteX="9dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

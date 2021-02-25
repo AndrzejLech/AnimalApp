@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnLion"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/lion_s"
+                android:text="Lion"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnKangaroo"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/kangaroo_s"
+                android:text="Kangaroo"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/btnLion" />
+
+            <Button
+                android:id="@+id/btnMeerkat"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/meerkat_s"
+                android:text="Meerkat"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/btnKangaroo" />
+
+            <Button
+                android:id="@+id/btnGorilla"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/gorilla_s"
+                android:text="Gorilla"
+                android:textAlignment="viewStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@+id/btnMeerkat" />
+
+            <Button
+                android:id="@+id/btnFox"
+                android:layout_width="match_parent"
+                android:layout_height="140sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/fox_s"
+                android:text="Fox"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnGorilla" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>
